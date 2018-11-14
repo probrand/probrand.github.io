@@ -20,41 +20,38 @@
 
 <body>
 
-    <div class='feedback-container'>
-        <div class='feedback'>
-            <p>Your Mail Was Sent Successfully. We'll Reply In A Giphy</p>
-        </div>
+    <div class='feedback'>
+        <p>Your Mail Was Sent Successfully. We'll Reply In A Jiffy</p>
     </div>
 
-    <div class='modal'>
+    <div class='modal open'>
 
-        <form class='form' name='gform' id='gform' enctype='text/plain' action='https://docs.google.com/forms/d/e/1FAIpQLSdy6Wy3YQA4MxKKhw40E-ypPDEhJgJc8m0nwOJK2HgHVMsTA/formResponse>' target="hidden_iframe" onsubmit='submitted=true;'>
+        <form class="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf9y3Q3-5hivEBZSDDSD3fdEpfLlfbN4VXUYXIv32LY57NWCQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
             
             <div>
-                    
                 <div class='form-item'>
                     <span class='cancel'><i data-feather='x'></i></span>
                     <label for='entry.780626012'> Name </label>
-                    <input type='text' id='entry.780626012' name='entry.780626012' placeholder='Name'/>
+                    <input type='text' name="entry.1848060971" id="entry.1848060971" placeholder='Name'/>
                 </div>
 
                 <div class='form-item'>
                     <label for='entry.1173764796'> Email </label>
-                    <input type='email' id='entry.1173764796' name='entry.1173764796' placeholder="I'll reply you via this mail"/>
+                    <input type='email'  name="entry.975190857" id="entry.975190857" placeholder="I'll reply you via this mail"/>
                 </div>
 
                 <div class='form-item' for='entry.19959960804'>
                     <label for='entry.19959960804'>Leave a message</label>
-                    <textarea placeholder="Let's start from what you do" class='scroll' id='entry.19959960804' name='entry.19959960804'></textarea>
+                    <textarea placeholder="Let's start from what you do" class='scroll' name="entry.600099635" id="entry.600099635"></textarea>
                 </div>
 
                 <div class='form-item'>
-                    <button class='btn'>Send Message</button>
+                    <button class='btn' type="submit">Send Message</button>
                 </div>
             </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     </div>
 
   <!--[if lte IE 9]>
@@ -121,19 +118,19 @@
 
             <div class='avatars'>
                 <article class='the-team__item'>
-                    <img src='src/img/me.jpg' alt='victor ofoegbu' class='the-team__img'/>
+                    <img src='src/img/victor.jpg' alt='victor ofoegbu' class='the-team__img'/>
                     <p class='the-team__name'>VICTOR OFOEGBU</p>
                     <p class='the-team__title'>Interaction and website Designer.</p>
-                    <a href='' class='the-team__link '><i class='twitter' data-feather='twitter'></i></a>
-                    <a href='' class='the-team__link '><i class='linkedin' data-feather='linkedin'></i></a>
+                    <a href='https://twitter.com/vick_OnRails' class='the-team__link '><i class='twitter' data-feather='twitter'></i></a>
+                    <a href='https://www.linkedin.com/in/victor-ofoegbu-256345144/' class='the-team__link '><i class='linkedin' data-feather='linkedin'></i></a>
                 </article>
 
                 <article class='the-team__item'>
-                    <img src='src/img/me.jpg' alt='victor ofoegbu' class='the-team__img'/>
-                    <p class='the-team__name'>PRESCIOUS ONYEE</p>
+                    <img src='src/img/precious.jpeg' alt='precious Onyee' class='the-team__img'/>
+                    <p class='the-team__name'>PRECIOUS ONYEE</p>
                     <p class='the-team__title'>UX Designer.</p>
-                    <a href='' class='the-team__link'><i class='twitter' data-feather='twitter'></i></a>
-                    <a href='' class='the-team__link'><i class='linkedin' data-feather='linkedin'></i></a>
+                    <a href='https://twitter.com/preshonyee' class='the-team__link'><i class='twitter' data-feather='twitter'></i></a>
+                    <a href='https://www.linkedin.com/in/preshonyee/' class='the-team__link'><i class='linkedin' data-feather='linkedin'></i></a>
                 </article>
             </div>
         </div>

@@ -3,7 +3,7 @@
     var modal = document.querySelector('.modal'),
     btn = document.querySelectorAll('.contact'),
     cancel = document.querySelector('.cancel'),
-    form = document.querySelector('form'),
+    form = document.querySelector('#gform'),
     feedback = document.querySelector('.feedback');
 
     const showModal = () => {
@@ -19,7 +19,6 @@
     }
 
     const submitForm = (e) => {
-        e.preventDefault();
         hideModal();
         fireFeedBack();
     }   
@@ -29,7 +28,7 @@
 
         setTimeout(function(){
             feedback.classList.remove('present');
-        }, 3000);
+        }, 4000);
     }
 
     for(x = 0; x < btn.length; x++){
