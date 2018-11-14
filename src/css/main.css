@@ -143,7 +143,7 @@ section,
 }
 
 .tell-a-story{
-    background: url('../img/header-img-min.jpg') 100% / cover no-repeat;
+    background: url('../img/header.jpg') 100% / cover no-repeat;
     height: 100vh;
     display: flex;
     color: #fff!important;
