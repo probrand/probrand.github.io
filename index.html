@@ -13,22 +13,140 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="src/css/main.css">
 </head>
 
 <body>
+
+    <div class='feedback-container'>
+        <div class='feedback'>
+            <p>Your Mail Was Sent Successfully. We'll Reply In A Giphy</p>
+        </div>
+    </div>
+
+    <div class='modal'>
+
+        <form class='form' name='gform' id='gform' enctype='text/plain' action='https://docs.google.com/forms/d/e/1FAIpQLSdy6Wy3YQA4MxKKhw40E-ypPDEhJgJc8m0nwOJK2HgHVMsTA/formResponse>' target="hidden_iframe" onsubmit='submitted=true;'>
+            
+            <div>
+                    
+                <div class='form-item'>
+                    <span class='cancel'><i data-feather='x'></i></span>
+                    <label for='entry.780626012'> Name </label>
+                    <input type='text' id='entry.780626012' name='entry.780626012' placeholder='Name'/>
+                </div>
+
+                <div class='form-item'>
+                    <label for='entry.1173764796'> Email </label>
+                    <input type='email' id='entry.1173764796' name='entry.1173764796' placeholder="I'll reply you via this mail"/>
+                </div>
+
+                <div class='form-item' for='entry.19959960804'>
+                    <label for='entry.19959960804'>Leave a message</label>
+                    <textarea placeholder="Let's start from what you do" class='scroll' id='entry.19959960804' name='entry.19959960804'></textarea>
+                </div>
+
+                <div class='form-item'>
+                    <button class='btn'>Send Message</button>
+                </div>
+            </div>
+        </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    </div>
+
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <main>
+    <div class='header container'>
+        <div>
+            <button class='header__header-btn contact'> GET A WEBSITE </button>
+            <p class='header__primier-text primier-text'>LET'S GET REAL</p>
+            <p class='header__main-text main-text'>What Would Someone Find If They Googled You? <br> 
+            What If Your Career Depended On What They Found?</p>
+        </div>
+        <span class='first-line'></span>
+        <span class='second-line'></span>
+        <span class='circle-line'></span>
+    </div>
 
+    <section class='tell-a-story container'>
+        <div>
+            <p class='tell-a-story__primier-text primier-text'>BE MORE PROFESSIONAL</p>
+            <p class='tell-a-story__main-text main-text'>How Would You Tell An Interesting Story Of All Your Hard Work And Experiences All In One Beautiful Piece?</p>
+        </div>
+    </section>
+
+    <section class='right container'>
+        <div>
+        <article class='right-place'>
+            <p class='right-place__primier-text primier-text'>BE AT THE RIGHT PLACE</p>
+            <p class='right-place__main-text main-text'>People Now Spend A Lot Of Their Time On The Internet.</p>
+        </article>
+
+        <article class='right-people'>
+            <p class='right-people__primier-text primier-text'>MEET THE RIGHT PEOPLE</p>
+            <p class='right-people__main-text main-text'>Your Next Boss And Pretty Much Everyone Important To Your Career Is On The Internet Already.</p>
+        </article>
+
+        <article class='right-things'>
+            <p class='right-things__primier primier-text'>SHOW THE RIGHT THINGS</p>
+            <p class='right-things__main-text main-text'>It's Not So Great When A Person Wants To Know About You and All He Sees Is You On FaceBook. Not Professional.</p>
+        </article>
+    </div>
+    </section>
+
+    <section class='investment container'>
+        <div>
+            <P class='investment__primier text primier-text'>THINK ABOUT IT</P>
+            <p class='investment__main-text main-text'>There's No Bigger Investment Than Building A Professional Brand. A Personal Website Makes It Easier.
+                If You've Always Wanted It, Now's The Time. Starting @ $100.
+            </p>
+
+            <div class='investment-btns'>
+                <button class=' btn investment__btn contact'>GET ME ONE</button>
+                <p class='investment__questions'>I HAVE QUESTIONS</p>
+            </div>
+        </div>
+    </section>
+
+    <section class='the-team container'>
+        <div>
+            <p class='the-team__primier-text primier-text'>MEET THE TEAM</p>
+            <p class='the-team__main-text main-text'>We're A Duet Design Team Passionate About Helping Professionals Create Their Space On The Internet.</p>
+
+            <div class='avatars'>
+                <article class='the-team__item'>
+                    <img src='src/img/me.jpg' alt='victor ofoegbu' class='the-team__img'/>
+                    <p class='the-team__name'>VICTOR OFOEGBU</p>
+                    <p class='the-team__title'>Interaction and website Designer.</p>
+                    <a href='' class='the-team__link '><i class='twitter' data-feather='twitter'></i></a>
+                    <a href='' class='the-team__link '><i class='linkedin' data-feather='linkedin'></i></a>
+                </article>
+
+                <article class='the-team__item'>
+                    <img src='src/img/me.jpg' alt='victor ofoegbu' class='the-team__img'/>
+                    <p class='the-team__name'>PRESCIOUS ONYEE</p>
+                    <p class='the-team__title'>UX Designer.</p>
+                    <a href='' class='the-team__link'><i class='twitter' data-feather='twitter'></i></a>
+                    <a href='' class='the-team__link'><i class='linkedin' data-feather='linkedin'></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <p class='copyright'>Copyright &copy; 2018</p>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <script>
+      feather.replace()
+  </script>
+</body>
 </html>
