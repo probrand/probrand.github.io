@@ -96,13 +96,14 @@ section,
     font-size: 18px;
     color: var(--font-color);
     margin-bottom: 8px;
+    color: #fff;
 }
 
 .main-text{
     font-size: 28px;
     font-style: medium;
     max-width: 330px;
-    color: var(--font-color);
+    color: #fff;
     line-height: 38px;
     font-weight: 500;
 }
@@ -139,6 +140,7 @@ section,
     background: url('../img/header-img-min.jpg') 100% / cover no-repeat;
     height: 100vh;
     display: flex;
+    color: #fff!important;
     padding-bottom: 20px;
 }
 
@@ -388,9 +390,6 @@ a .linkedin {
         font-size: 40px;
         color: #fff;
         line-height: 50px;
-    }
-    .tell-a-story{
-        filter: brightness(.65);
     }
     .tell-a-story .main-text,
     .tell-a-story .primier-text{
